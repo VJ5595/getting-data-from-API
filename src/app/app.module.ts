@@ -8,6 +8,7 @@ import { AppRoutingModule  } from './app.routes';
 import { AppComponent } from './app.component';
 import { NewsComponent } from './news/news.component';
 import { CatogoryComponent } from './news/catogory/catogory.component';
+import {TimeAgoPipe} from 'time-ago-pipe';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { CatogoryComponent } from './news/catogory/catogory.component';
     AppComponent,
     NewsComponent,
     CatogoryComponent,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,

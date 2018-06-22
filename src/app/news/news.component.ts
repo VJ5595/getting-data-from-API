@@ -3,6 +3,8 @@ import { NewsService } from './news.service';
 import { Country } from '../country';
 
 import {Router} from "@angular/router";
+import * as Configuration from './../../../config.js';
+
 
 @Component({
   selector: 'app-news',
@@ -11,7 +13,7 @@ import {Router} from "@angular/router";
 })
 export class NewsComponent implements OnInit {
   news = 'NEWS SOURCES';
-
+  public configApi = Configuration;
   name1: any;
   count: any;
 
@@ -34,7 +36,7 @@ export class NewsComponent implements OnInit {
     this.selectedCountryCode = this.selectedCountry.code;
   }
   onApicall() {
-    var query = "country=" + this.selectedCountryCode + "&category=" + this.selectedCategory + "&apiKey=21dd3db9a5a04354915b8539d508bf2e";
+    var query = "country=" + this.selectedCountryCode + "&category=" + this.selectedCategory + "&apiKey=" + this.configApi.apikey;
     
     this._newsService.getCount(query)
       .subscribe((data1) => {

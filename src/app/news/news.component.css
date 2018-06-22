@@ -10,12 +10,12 @@ section{
     text-decoration: none;
 }
 .card-body{
-    width: 150px;
+    padding: 10px 25px 0px 0px;
     float: left;
 }
 .borderLeft{
     border-left: 1px solid #cccccc;
-    height: 290px;
+    height: 350px;
 }
 .col-md-2 >div > p > a {
     padding-left: 25px;

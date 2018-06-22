@@ -2,51 +2,61 @@
   {
     "name": "Australia",
     "code": "au",
-    "catagory": ["business","science","sports","technology"]
+    "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
     "name": "Belgium",
     "code": "be",
-    "catagory": ["business","health","science","sports","technology"]
+    "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
     "name": "Canada",
     "code": "ca",
-    "catagory": ["business","health","science","sports","technology"]
+    "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
     "name": "Egypt",
     "code": "eg",
-    "catagory": ["business","health","sports","technology"]
+    "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
     "name": "Greece",
     "code": "gr",
-    "catagory": ["business","health","science","sports","technology"]
+    "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
     "name": "India",
     "code": "in",
-    "catagory": ["business","health","science","sports","technology"]
+    "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
     "name": "Japan",
     "code": "jp",
-    "catagory": ["business","health","science","sports","technology"]
+    "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
     "name": "Mexico",
     "code": "mx",
-    "catagory": ["business","health","science","sports","technology"]
+    "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
     "name": "Philippines",
     "code": "ph",
-    "catagory": ["business","health","science","sports","technology"]
+    "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
     "name": "South Africa",
     "code": "za",
-    "catagory": ["business","health","science","sports","technology"]
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "United States",
+    "code": "us",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "United Kingdom",
+    "code": "gb",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
   }
 ]

@@ -1,0 +1,25 @@
+<section>
+  <h4>
+    {{news}}
+  </h4>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="" *ngFor="let key of name1">
+        <p [class.selected]="key === selectedCountry" (click)="onSelect(key)">
+          <a>{{key.name}}</a>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="card panel-success col-md-10 borderLeft" *ngIf="selectedCountry">
+      <div class="card-header">
+        <h2>{{ selectedCountry.name }} news API</h2>
+        <h3>Sub-categories</h3>
+      </div>
+      <div class="card-body" *ngFor="let value of selectedCountry.catagory">
+        <a (click)="onCatogory(value)">{{value}}</a>
+      </div>
+    </div>
+  </div>
+</section>

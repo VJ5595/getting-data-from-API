@@ -1,0 +1,22 @@
+section{
+    margin: 1em;
+}
+
+.card-body > a {
+    background: #538ae433;
+    padding: 8px 25px;
+    border-radius: 50px;
+    color: #538AE4;
+    text-decoration: none;
+}
+.card-body{
+    width: 150px;
+    float: left;
+}
+.borderLeft{
+    border-left: 1px solid #cccccc;
+    height: 290px;
+}
+.col-md-2 >div > p > a {
+    padding-left: 25px;
+}

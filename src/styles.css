@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+  body, input[text], button {
+    color: #000;
+  }
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a {
+    cursor: pointer;
+    text-decoration: none !important;
+  }
+  p.card-text {
+    word-break: break-all;
+  }

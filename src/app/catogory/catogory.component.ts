@@ -16,7 +16,7 @@ export class CatogoryComponent implements OnInit, OnChanges {
   count : any;
   p:any;
   public articleList = [];
-  public pagesize = 10;
+  public pagesize = 5;
 
   public selectedCountryCode = "";
   public selectedCategory = "";
@@ -42,7 +42,9 @@ export class CatogoryComponent implements OnInit, OnChanges {
     this._catogoryService.getCount(query)
       .subscribe((data1) => {
         this.count = data1['totalResults'];
+        console.log("totalResults",data1['totalResults']);
         this.p = page; 
+        console.log("page",page);
         this.articleList = data1['articles'];
       })
   }

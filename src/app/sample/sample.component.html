@@ -1,3 +1,21 @@
-<p>
-  sample works!
-</p>
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <div *ngFor="let key of articleList | paginate: { id: 'server', itemsPerPage: pagesize, currentPage: p, totalItems: count }">
+      <div class="row">
+        <div class="card h-100">
+          <h4 class="card-header">{{key.title}}</h4>
+          <div class="card-body">
+            <p class="card-text">{{key.description}}</p>
+            <p>
+              <span style="color: brown">Author by</span> {{key.author}}</p>
+          </div>
+          <div class="card-footer">
+            <p style="margin: 0;"><span>{{key.publishedAt | timeAgo}}</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <pagination-controls (pageChange)="onApicall($event)" id="server"></pagination-controls>
+  </div>
+</div>

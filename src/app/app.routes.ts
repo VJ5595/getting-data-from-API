@@ -3,6 +3,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 import { CatogoryComponent } from './catogory/catogory.component';
 import { NewsComponent } from './news/news.component';
+import { SampleComponent } from './sample/sample.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,10 @@ const routes: Routes = [
         component: NewsComponent,
         pathMatch: 'full'
     },
-
+    {
+        path: 'allData',
+        component: SampleComponent,
+    },
 ];
 
 

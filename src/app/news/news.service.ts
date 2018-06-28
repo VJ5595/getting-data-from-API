@@ -14,16 +14,4 @@ export class NewsService {
   getName1() {
     return this._http.get(this._url);
   }
-  getCount(query) {
-    return this._http.get("https://newsapi.org/v2/top-headlines?" + query);
-  }
-
-
-  setSelectedCountry(value: any) {
-    this._selectedCountry = value
-  }
-
-  getSelectedCountry(): any {
-    return this._selectedCountry;
-  }
-}
+ }

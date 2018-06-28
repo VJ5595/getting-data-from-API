@@ -1,14 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-// import { RouterModule, PreloadAllModules } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule  } from './app.routes';
+import { NgxPaginationModule } from 'ngx-pagination'; 
 
 import { AppComponent } from './app.component';
 import { NewsComponent } from './news/news.component';
-import { CatogoryComponent } from './news/catogory/catogory.component';
-import {TimeAgoPipe} from 'time-ago-pipe';
+import { CatogoryComponent } from './catogory/catogory.component';
+import { TimeAgoPipe } from 'time-ago-pipe';
+import { SampleComponent } from './sample/sample.component';
 
 
 @NgModule({
@@ -16,10 +17,12 @@ import {TimeAgoPipe} from 'time-ago-pipe';
     AppComponent,
     NewsComponent,
     CatogoryComponent,
-    TimeAgoPipe
+    TimeAgoPipe,
+    SampleComponent
   ],
   imports: [
     BrowserModule,
+    NgxPaginationModule,
     FormsModule,
     HttpClientModule,
     AppRoutingModule

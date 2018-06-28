@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-4 col-md-offset-4">
-    <div *ngFor="let key of _newsService.getSelectedCountry()">
+    <div *ngFor="let key of articleList | paginate: { id: 'server', itemsPerPage: 10, currentPage: p, totalItems: count }">
       <div class="row">
         <div class="card h-100">
           <h4 class="card-header">{{key.title}}</h4>
@@ -15,5 +15,7 @@
         </div>
       </div>
     </div>
+    
+  <pagination-controls (pageChange)="onApicall($event)" id="server"></pagination-controls>
   </div>
 </div>

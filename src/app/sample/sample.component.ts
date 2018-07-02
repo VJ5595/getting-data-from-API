@@ -20,19 +20,18 @@ export class SampleComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  public timeout:any;
   public debounce(func, wait, immediate=null) {
-
-    var timeout;
+    var that = this;
     return function() {
       var context = this, args = arguments;
       var later = function() {
-        timeout = null;
+        that.timeout = null;
         if (!immediate) func.apply(context, args);
       };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
+      var callNow = immediate && !that.timeout;
+      clearTimeout(that.timeout);
+      that.timeout = setTimeout(later, wait);
       if (callNow) func.apply(context, args);
     };
   };
@@ -44,9 +43,8 @@ export class SampleComponent implements OnInit {
         this.onApicall(1);
      }
     }, 2500)();
-    
-   
   } 
+  
   onApicall(page) {
     var query = "&q=" + this.range + "&page=" + page + "&pageSize=" + this.pagesize + "&apiKey=" + this.configApi.apikey;
     console.log("++++++++++++++++++",query);

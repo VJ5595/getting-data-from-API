@@ -16,3 +16,8 @@ h4.card-header {
     background: #eee;
     padding: 10px;
 }
+
+.cust-width{
+    width: 300px;
+    float: right;
+}

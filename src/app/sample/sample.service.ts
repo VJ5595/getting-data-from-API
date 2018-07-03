@@ -8,7 +8,7 @@ export class SampleService {
 
   constructor(private _http: HttpClient) { }
 
-  getCount(query) {
-    return this._http.get("https://newsapi.org/v2/everything?sortBy=relevancy"+ query);
+  getCountryUrl(query) {
+    return this._http.get(query);
   }
 }

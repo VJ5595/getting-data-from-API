@@ -9,23 +9,24 @@ import * as Configuration from './../../../config.js';
   styleUrls: ['./sample.component.css']
 })
 export class SampleComponent implements OnInit {
-  count : any;
-  p:any;
+
+  totalCountResult: any;
+  pagination: any;
   public articleList = [];
   public pagesize = 10;
   public configApi = Configuration;
-  public range : any;
+  public searchQuery: any;
 
-  constructor(private _sampleService: SampleService) {}
+  constructor(private _sampleService: SampleService) { }
 
-  ngOnInit() {
-  }
-  public timeout:any;
-  public debounce(func, wait, immediate=null) {
+  ngOnInit() { }
+
+  public timeout: any;
+  public debounce(func, wait, immediate = null) {
     var that = this;
-    return function() {
+    return function () {
       var context = this, args = arguments;
-      var later = function() {
+      var later = function () {
         that.timeout = null;
         if (!immediate) func.apply(context, args);
       };
@@ -35,26 +36,24 @@ export class SampleComponent implements OnInit {
       if (callNow) func.apply(context, args);
     };
   };
-  
+
   saverange(newValue) {
-    this.debounce(()=> {
-      this.range = newValue;
+    this.debounce(() => {
+      this.searchQuery = newValue;
       if (newValue.length > 3) {
         this.onApicall(1);
-     }
+      }
     }, 2500)();
-  } 
-  
-  onApicall(page) {
-    var query = "&q=" + this.range + "&page=" + page + "&pageSize=" + this.pagesize + "&apiKey=" + this.configApi.apikey;
-    console.log("++++++++++++++++++",query);
-    this._sampleService.getCount(query)
+  }
 
-      .subscribe((data1) => {
-        this.count = data1['totalResults'];
-        this.p = page; 
-        this.articleList = data1['articles'];
-        console.log("articles",data1['articles']);
+  onApicall(page) {
+    var query = this.configApi.everythingUrl + "&q=" + this.searchQuery + "&page=" + page + "&pageSize=" + this.pagesize + "&apiKey=" + this.configApi.apikey;
+    this._sampleService.getCountryUrl(query)
+
+      .subscribe((endpointData) => {
+        this.totalCountResult = endpointData['totalResults'];
+        this.pagination = page;
+        this.articleList = endpointData['articles'];
       })
   }
 

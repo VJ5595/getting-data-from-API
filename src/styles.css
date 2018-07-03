@@ -1,15 +1,23 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-  body, input[text], button {
-    color: #000;
-  }
-  * {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  a {
-    cursor: pointer;
-    text-decoration: none !important;
-  }
-  p.card-text {
-    word-break: break-all;
-  }
+body, input[text], button {
+  color: #000;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+p.card-text {
+  word-break: break-all;
+}
+.navbar-nav>li>a:active {
+  color: #000;
+  background: #aeaeae;
+}
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+}

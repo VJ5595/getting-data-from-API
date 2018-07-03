@@ -14,8 +14,8 @@ import {Router} from "@angular/router";
 export class NewsComponent implements OnInit {
   news = 'NEWS SOURCES';
 
-  name1: any;
-  count: any;
+  getCountryName: any;
+  countries: any;
 
   public selectedCountryCode = "";
   public selectedCategory = "";
@@ -24,14 +24,14 @@ export class NewsComponent implements OnInit {
   constructor(private _newsService: NewsService, private _router: Router) { }
 
   ngOnInit() {
-    this._newsService.getName1()
+    this._newsService.getJsonUrl()
     .subscribe((Data) => {
-      this.name1 = Data;
+      this.getCountryName = Data;
     });
 
   }
-  onSelect(count: Country): void {
-    this.selectedCountry = count;
+  onSelect(countries: Country): void {
+    this.selectedCountry = countries;
     this.selectedCountryCode = this.selectedCountry.code;
   }
 

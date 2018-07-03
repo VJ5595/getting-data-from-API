@@ -9,14 +9,7 @@ export class CatogoryService {
 
   constructor(private _http: HttpClient) { }
 
-  getCount(query) {
-    return this._http.get("https://newsapi.org/v2/top-headlines?" + query);
+  getCountryUrl(query) {
+    return this._http.get(query);
   }
-  setSelectedCountry(value: any) {
-    this._selectedCountry = value
-  }
-  getSelectedCountry(): any {
-    return this._selectedCountry;
-  }
-
 }

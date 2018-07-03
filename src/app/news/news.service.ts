@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +10,7 @@ export class NewsService {
 
   constructor(private _http: HttpClient) { }
 
-  getName1() {
+  getJsonUrl() {
     return this._http.get(this._url);
   }
  }

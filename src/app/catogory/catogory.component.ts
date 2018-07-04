@@ -3,6 +3,7 @@ import { CatogoryService } from './catogory.service';
 
 import { ActivatedRoute } from "@angular/router";
 import * as Configuration from './../../../config.js';
+import { AlertsService } from 'angular-alert-module';
 
 @Component({
   selector: 'app-catogory',
@@ -19,7 +20,7 @@ export class CatogoryComponent implements OnInit, OnChanges {
   public selectedCountryCode = "";
   public selectedCategory = "";
 
-  constructor(private _catogoryService: CatogoryService, private route: ActivatedRoute) {
+  constructor(private _catogoryService: CatogoryService, private route: ActivatedRoute, private alerts: AlertsService) {
   }
 
   ngOnInit() {
@@ -34,13 +35,18 @@ export class CatogoryComponent implements OnInit, OnChanges {
   }
 
   onApicall(page) {
-    var query = this.configApi.headlinesUrl + "country=" + this.selectedCountryCode + "&category=" + this.selectedCategory + "&page=" + page + "&pageSize=" + this.pagesize + "&apiKey=" + this.configApi.apikey;
+    var query = this.configApi.baseUrl + "top-headlines?country=" + this.selectedCountryCode + "&category=" + this.selectedCategory + "&page=" + page + "&pageSize=" + this.pagesize + "&apiKey=" + this.configApi.apikey;
     this._catogoryService.getCountryUrl(query)
       .subscribe((endpointData) => {
         this.totalCountResult = endpointData['totalResults'];
         this.pagination = page;
         this.articleList = endpointData['articles'];
-      })
+      },
+      error => {
+        this.alerts.setDefaults('timeout',10);
+        this.alerts.setMessage('Something went Wrong!!!','error');
+      },
+    )
   }
 
 }

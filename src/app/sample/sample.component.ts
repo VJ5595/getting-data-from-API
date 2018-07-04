@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { SampleService } from './sample.service.js';
 import * as Configuration from './../../../config.js';
+import { AlertsService } from 'angular-alert-module';
 
 @Component({
   selector: 'app-sample',
@@ -17,7 +18,7 @@ export class SampleComponent implements OnInit {
   public configApi = Configuration;
   public searchQuery: any;
 
-  constructor(private _sampleService: SampleService) { }
+  constructor(private _sampleService: SampleService,private alerts: AlertsService) { }
 
   ngOnInit() { }
 
@@ -47,14 +48,19 @@ export class SampleComponent implements OnInit {
   }
 
   onApicall(page) {
-    var query = this.configApi.everythingUrl + "&q=" + this.searchQuery + "&page=" + page + "&pageSize=" + this.pagesize + "&apiKey=" + this.configApi.apikey;
+    var query = this.configApi.baseUrl + "everything?sortBy=relevancy&language=en&q=" + this.searchQuery + "&page=" + page + "&pageSize=" + this.pagesize + "&apiKey=" + this.configApi.apikey;
     this._sampleService.getCountryUrl(query)
 
       .subscribe((endpointData) => {
         this.totalCountResult = endpointData['totalResults'];
         this.pagination = page;
         this.articleList = endpointData['articles'];
-      })
+      },
+      error => {
+        this.alerts.setDefaults('timeout',10);
+        this.alerts.setMessage('Something went Wrong!!!','error');
+      },
+    )
   }
 
 }

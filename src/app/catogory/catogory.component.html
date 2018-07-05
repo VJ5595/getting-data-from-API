@@ -1,3 +1,5 @@
+<spinner [backgroundColor]="'#ff0000'" [spinner]="spinkit.skWave" [minDuration]="1000">
+</spinner>
 <div class="row">
   <div class="col-md-4 col-md-offset-4">
     <div *ngFor="let key of articleList | paginate: { id: 'server', itemsPerPage: pagesize, currentPage: pagination, totalItems: totalCountResult }">
@@ -6,7 +8,8 @@
           <h4 class="card-header">{{key.title}}</h4>
           <div class="card-body">
             <p class="card-text">{{key.description}}</p>
-            <p><span *ngIf="key.author" style="color: brown">Author by</span> {{key.author}}</p>
+            <p>
+              <span *ngIf="key.author" style="color: brown">Author by</span> {{key.author}}</p>
           </div>
           <div class="card-footer">
             <p style="margin: 0;">

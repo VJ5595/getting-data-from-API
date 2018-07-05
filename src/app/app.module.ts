@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule  } from './app.routes';
 import { NgxPaginationModule } from 'ngx-pagination'; 
 import { AlertsModule } from 'angular-alert-module';
+import { NgHttpLoaderModule } from 'ng-http-loader';
 
 import { AppComponent } from './app.component';
 import { NewsComponent } from './news/news.component';
@@ -27,7 +28,8 @@ import { SampleComponent } from './sample/sample.component';
     FormsModule,
     HttpClientModule,
     AlertsModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    NgHttpLoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

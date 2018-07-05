@@ -1,5 +1,6 @@
 import { Component, OnInit, OnChanges } from '@angular/core';
 import { CatogoryService } from './catogory.service';
+import { Spinkit } from 'ng-http-loader';
 
 import { ActivatedRoute } from "@angular/router";
 import * as Configuration from './../../../config.js';
@@ -19,6 +20,7 @@ export class CatogoryComponent implements OnInit, OnChanges {
   public pagesize = 5;
   public selectedCountryCode = "";
   public selectedCategory = "";
+  public spinkit = Spinkit;
 
   constructor(private _catogoryService: CatogoryService, private route: ActivatedRoute, private alerts: AlertsService) {
   }

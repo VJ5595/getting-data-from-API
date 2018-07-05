@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Spinkit } from 'ng-http-loader';
 
 import { SampleService } from './sample.service.js';
 import * as Configuration from './../../../config.js';
@@ -17,6 +18,7 @@ export class SampleComponent implements OnInit {
   public pagesize = 10;
   public configApi = Configuration;
   public searchQuery: any;
+  public spinkit = Spinkit;
 
   constructor(private _sampleService: SampleService,private alerts: AlertsService) { }
 

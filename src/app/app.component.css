@@ -1,0 +1,47 @@
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #eeecec;
+    color: #000000;
+    padding: 11px;
+    text-align: center;
+    position: fixed;
+}
+.footer h4{
+    margin: 0;
+}
+.icon-bar a:hover {
+    background-color: #000;
+}
+.icon-bar a {
+    text-align: center;
+    padding: 14px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}

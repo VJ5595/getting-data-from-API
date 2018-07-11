@@ -6,6 +6,7 @@ import { AppRoutingModule  } from './app.routes';
 import { NgxPaginationModule } from 'ngx-pagination'; 
 import { AlertsModule } from 'angular-alert-module';
 import { NgHttpLoaderModule } from 'ng-http-loader';
+import { ShareButtonsModule } from '@ngx-share/buttons';
 
 import { AppComponent } from './app.component';
 import { NewsComponent } from './news/news.component';
@@ -29,6 +30,7 @@ import { SampleComponent } from './sample/sample.component';
     HttpClientModule,
     AlertsModule.forRoot(),
     AppRoutingModule,
+    ShareButtonsModule.forRoot(),
     NgHttpLoaderModule
   ],
   providers: [],

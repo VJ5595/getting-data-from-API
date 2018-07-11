@@ -15,6 +15,12 @@
             <p style="margin: 0;">
               <span>{{key.publishedAt | timeAgo}}</span>
             </p>
+            <div>
+              <share-buttons  [include]="['facebook','twitter','google','linkedin']" 
+                              [url]="'https://'+ key.source.name"
+                              [autoSetMeta]="false">
+              </share-buttons>
+            </div>
             <p>
               <span style="color: brown">Source: </span>{{key.source.name}}
             </p>

@@ -10,6 +10,7 @@ h4.card-header {
 }
 .card-body {
     padding: 10px;
+    background: #dfdcdf;
 }
 .card-footer {
     border-top: 1px solid #ccc;

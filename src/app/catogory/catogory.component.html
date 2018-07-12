@@ -9,7 +9,9 @@
           <div class="card-body">
             <p class="card-text">{{key.description}}</p>
             <p>
-              <span *ngIf="key.author" style="color: brown">Author by</span> {{key.author}}</p>
+              <span *ngIf="key.author" style="color: brown">Author by</span> {{key.author}}
+            </p>
+            <p class="card-text"><span>Read more :&nbsp;</span><a href="{{key.url}}" target="_blank">{{key.url}}</a></p>
           </div>
           <div class="card-footer">
             <p style="margin: 0;">

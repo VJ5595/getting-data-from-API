@@ -30,8 +30,8 @@ export class NewsComponent implements OnInit {
     });
 
   }
-  onSelect(countries: Country): void {
-    this.selectedCountry = countries;
+  onSelect(countries) {
+    this.selectedCountry = countries.selectedValue;
     this.selectedCountryCode = this.selectedCountry.code;
   }
 

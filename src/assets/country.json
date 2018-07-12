@@ -1,7 +1,17 @@
 [
   {
+    "name": "Argentina",
+    "code": "ar",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
     "name": "Australia",
     "code": "au",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Austria",
+    "code": "at",
     "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
@@ -10,8 +20,38 @@
     "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
+    "name": "Brazil",
+    "code": "br",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Bulgaria",
+    "code": "bg",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
     "name": "Canada",
     "code": "ca",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "China",
+    "code": "cn",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Colombia",
+    "code": "co",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Cuba",
+    "code": "cu",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Czech Republic",
+    "code": "cz",
     "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
@@ -20,8 +60,28 @@
     "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
+    "name": "France",
+    "code": "fr",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Germany",
+    "code": "de",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
     "name": "Greece",
     "code": "gr",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Hong kong",
+    "code": "hk",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Hungary",
+    "code": "hu",
     "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
@@ -30,8 +90,43 @@
     "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
+    "name": "Indonesia",
+    "code": "id",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Ireland",
+    "code": "ie",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Israel",
+    "code": "il",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Italy",
+    "code": "it",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
     "name": "Japan",
     "code": "jp",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Lativa",
+    "code": "lv",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Lithuania",
+    "code": "lt",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Malaysia",
+    "code": "my",
     "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
@@ -40,8 +135,78 @@
     "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
+    "name": "Morocco",
+    "code": "ma",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Netherlands",
+    "code": "nl",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "New Zealand",
+    "code": "nz",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Nigeria",
+    "code": "ng",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Norway",
+    "code": "no",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
     "name": "Philippines",
     "code": "ph",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Poland",
+    "code": "pl",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Portugal",
+    "code": "pt",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Romania",
+    "code": "ro",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Russia",
+    "code": "ru",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Saudi Arabia",
+    "code": "sa",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Serbia",
+    "code": "rs",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Singapore",
+    "code": "sg",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Slovakia",
+    "code": "sk",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Slovenia",
+    "code": "si",
     "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
@@ -50,13 +215,58 @@
     "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
-    "name": "United States",
-    "code": "us",
+    "name": "South Korea",
+    "code": "kr",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Sweden",
+    "code": "se",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Switzerland",
+    "code": "ch",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Taiwan",
+    "code": "tw",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Thailand",
+    "code": "th",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Turkey",
+    "code": "tr",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "UAE",
+    "code": "ae",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Ukraine",
+    "code": "ua",
     "catagory": ["business","entertainment","health","science","sports","technology"]
   },
   {
     "name": "United Kingdom",
     "code": "gb",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "United States",
+    "code": "us",
+    "catagory": ["business","entertainment","health","science","sports","technology"]
+  },
+  {
+    "name": "Venuzuela",
+    "code": "ve",
     "catagory": ["business","entertainment","health","science","sports","technology"]
   }
 ]

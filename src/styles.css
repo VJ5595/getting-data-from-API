@@ -6,6 +6,10 @@
 body, input[text], button {
   color: #000;
 }
+body{
+  background: url(assets/img/news1.jpg) no-repeat top left / cover;
+
+}
 html{
   overflow-x: hidden;
 }
@@ -30,4 +34,7 @@ p.card-text {
 pagination-controls{
   display: table;
   margin-bottom: 50px;
+}
+ul.ngx-pagination {
+  margin-left: 150px;
 }
